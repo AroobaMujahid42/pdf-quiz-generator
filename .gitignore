@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+samples/
+test_ai.py
+test_ui.py
