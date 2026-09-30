@@ -58,9 +58,13 @@ def render_short_answer_card(q: ShortAnswerQuestion, index: int):
     st.markdown(
         f"""
         <div class="question-card" style="{question_card_delay(index)}">
-            <span class="question-badge badge-short">Short Answer</span>
-            <div class="question-text">{index + 1}. {q.question}</div>
-            <div class="correct-answer-box">✅ <strong>Ideal answer:</strong> {q.ideal_answer}</div>
+            <div class="card-strip-short">
+                <span class="question-badge badge-short">Short Answer</span>
+                <div class="question-text-short">{index + 1}. {q.question}</div>
+            </div>
+            <div class="card-body">
+                <div class="correct-answer-box">✅ <strong>Ideal answer:</strong> {q.ideal_answer}</div>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
